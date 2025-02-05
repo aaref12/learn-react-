@@ -3,6 +3,10 @@
         "aaref",
         "customrender",
         "maincontainer",
-        "Shaikh"
+        "Shaikh",
+        "tailwind"
+    ],
+    "cSpell.ignoreWords": [
+        "tailwind"
     ]
 }
