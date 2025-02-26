@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useSelector ,useDispatch} from 'react-redux'
-import {removetod,updateTodo} from '../features/todo/todoslice'
+import {removetod ,} from '../features/todo/todoslice'
 
 
 
@@ -14,7 +14,7 @@ function Todo() {
 
   return (
     <>
-       <div>Todos</div>
+       <div className='text-white'>Todos List</div>
     <ul className="list-none">
         {todos.map((todo) => (
           <li
@@ -22,6 +22,8 @@ function Todo() {
             key={todo.id}
           >
             <div className='text-white'>{todo.Text}</div>
+            
+       
             <button
              onClick={() => dispatch(removetod(todo.id))}
               className="text-white bg-red-500 border-0 py-1 px-4 focus:outline-none hover:bg-red-600 rounded text-md"
@@ -41,9 +43,9 @@ function Todo() {
                 />
               </svg>
             </button>
-           
           </li>
         ))}
+       
       </ul>
     </>
 
@@ -51,3 +53,11 @@ function Todo() {
 }
 
 export default Todo
+
+
+
+
+
+
+
+
